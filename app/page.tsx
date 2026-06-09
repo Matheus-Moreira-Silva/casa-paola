@@ -1,6 +1,8 @@
 export default function Home() {
   const whatsappLink =
     "https://wa.me/5531973146945?text=Olá! Gostaria de fazer um pedido de cookies da Casa Paola.";
+  const ifoodLink = 
+    "https://www.ifood.com.br/delivery/belo-horizonte-mg/casa-paola-cookies-artesanais-jonas-veiga/81c15c82-2a9c-4e13-be4b-d70c11dbeeb9?utm_medium=share";
 
   const cookies = [
     {
@@ -64,13 +66,25 @@ export default function Home() {
           sabor e amor em cada detalhe.
         </p>
 
-        <a
-          href={whatsappLink}
-          target="_blank"
-          className="mt-10 inline-flex items-center justify-center rounded-full bg-[#E8B561] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#203320] shadow-lg transition hover:scale-105 hover:bg-[#F4B251] md:text-base"
-        >
-          Fazer pedido pelo WhatsApp
-        </a>
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+  <a
+    href={whatsappLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center rounded-full bg-[#E8B561] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#203320] shadow-lg transition hover:scale-105 hover:bg-[#F4B251] md:text-base"
+  >
+    Fazer pedido pelo WhatsApp
+  </a>
+
+  <a
+    href={ifoodLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center rounded-full border border-[#E8B561] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#E8B561] shadow-lg transition hover:scale-105 hover:bg-[#E8B561] hover:text-[#203320] md:text-base"
+  >
+    Pedir pelo iFood
+  </a>
+</div>
         
       </section>
 
