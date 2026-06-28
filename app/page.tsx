@@ -33,6 +33,20 @@ export default function Home() {
       imagem:
      "/cookies/kinder.jpeg",
     },
+    {
+  nome: "Nutella",
+  descricao:
+    "Massa clássica com gotas de chocolate branco e meio amargo, recheada com uma generosa camada de Nutella.",
+  preco: "R$ 20,00",
+  imagem: "/cookies/nutella.jpeg",
+},
+{
+  nome: "Nutella Premium",
+  descricao:
+    "Massa à base de cacau com gotas de chocolate branco e meio amargo, recheada com Nutella e finalizada com Nutella Biscuit.",
+  preco: "R$ 26,00",
+  imagem: "/cookies/nutella-premium.jpeg",
+},
   ];
 
 
@@ -66,7 +80,7 @@ export default function Home() {
           sabor e amor em cada detalhe.
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
   <a
     href={whatsappLink}
     target="_blank"
