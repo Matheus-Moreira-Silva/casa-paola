@@ -45,7 +45,7 @@ export default function Home() {
   descricao:
     "Massa à base de cacau com gotas de chocolate branco e meio amargo, recheada com Nutella e finalizada com Nutella Biscuit.",
   preco: "R$ 26,00",
-  imagem: "/cookies/nutella-premium.jpeg",
+  imagem: "/cookies/nutellapremium.jpeg",
 },
   ];
 
@@ -80,12 +80,12 @@ export default function Home() {
           sabor e amor em cada detalhe.
         </p>
 
-        <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-12 flex max-w-2xl flex-col items-center justify-center gap-5 md:flex-row">
   <a
     href={whatsappLink}
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-center justify-center rounded-full bg-[#E8B561] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#203320] shadow-lg transition hover:scale-105 hover:bg-[#F4B251] md:text-base"
+    className="flex h-14 w-full md:w-80 items-center justify-center rounded-full bg-[#E8B561] text-[#203320] font-bold uppercase tracking-widest transition duration-300 hover:scale-105 hover:bg-[#F4B251]"
   >
     Fazer pedido pelo WhatsApp
   </a>
@@ -94,7 +94,7 @@ export default function Home() {
     href={ifoodLink}
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-center justify-center rounded-full border border-[#E8B561] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#E8B561] shadow-lg transition hover:scale-105 hover:bg-[#E8B561] hover:text-[#203320] md:text-base"
+    className="flex h-14 w-full md:w-80 items-center justify-center rounded-full border border-[#E8B561] text-[#E8B561] font-bold uppercase tracking-widest transition duration-300 hover:scale-105 hover:bg-[#E8B561] hover:text-[#203320]"
   >
     Pedir pelo iFood
   </a>
@@ -109,33 +109,39 @@ export default function Home() {
 
         <div className="mx-auto mt-4 h-px max-w-xs bg-[#E8B561]" />
 
-        <div className="mx-auto mt-12 grid max-w-4xl gap-8 md:grid-cols-2">
-          {cookies.map((cookie) => (
-            <div
-              key={cookie.nome}
-              className="overflow-hidden rounded-2xl border border-[#E8B561]/50 bg-[#1B2B1B] shadow-xl"
-            >
-              <div
-                className="h-52 bg-cover bg-center"
-                style={{ backgroundImage: `url(${cookie.imagem})` }}
-              />
+        <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+  {cookies.map((cookie) => (
+    <div
+      key={cookie.nome}
+      className="overflow-hidden rounded-2xl border border-[#E8B561]/50 bg-[#1B2B1B] shadow-xl"
+    >
+      <div
+      
+       className="h-52 overflow-hidden">
+  <img
+    src={cookie.imagem}
+    alt={cookie.nome}
+    className="w-full h-full object-cover object-center"
+  />
+</div>
 
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-bold uppercase tracking-widest text-[#F4B251]">
-                  {cookie.nome}
-                </h3>
+      <div className="flex min-h-[260px] flex-col p-6 text-center">
+        <h3 className="text-xl font-bold uppercase tracking-widest text-[#F4B251]">
+          {cookie.nome}
+        </h3>
 
-                <p className="mt-4 min-h-14 leading-relaxed text-[#F7D894]">
-                  {cookie.descricao}
-                </p>
+        <p className="mt-4 flex-1 leading-relaxed text-[#F7D894]">
+          {cookie.descricao}
+        </p>
 
-                <p className="mt-5 text-2xl font-bold text-[#F4B251]">
-                  {cookie.preco}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <p className="mt-6 text-3xl font-bold text-[#F4B251]">
+          {cookie.preco}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+        
         <div className="mx-auto mt-12 max-w-4xl rounded-2xl border border-[#E8B561] bg-[#1B2B1B] p-8 text-center shadow-xl">
   <h3 className="font-serif text-3xl text-[#E8B561]">
     Combos Especiais
