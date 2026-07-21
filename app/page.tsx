@@ -154,7 +154,7 @@ export default function Home() {
   <div className="mt-8 grid gap-6 md:grid-cols-2">
     <div className="rounded-xl border border-[#E8B561]/40 p-6">
       <h4 className="text-xl font-bold uppercase tracking-widest text-[#F4B251]">
-        Combo 1
+        Combo Clássico
       </h4>
 
       <p className="mt-3 text-[#F7D894]">
@@ -172,7 +172,7 @@ export default function Home() {
 
     <div className="rounded-xl border border-[#E8B561]/40 p-6">
       <h4 className="text-xl font-bold uppercase tracking-widest text-[#F4B251]">
-        Combo 2
+        Combo Premium
       </h4>
 
       <p className="mt-3 text-[#F7D894]">
@@ -194,14 +194,14 @@ export default function Home() {
       <section className="px-6 pb-14">
         <div className="mx-auto grid max-w-6xl gap-6 rounded-2xl border border-[#E8B561]/40 p-8 md:grid-cols-3">
           <InfoCard
-            titulo="Encomendas"
-            texto="Pedidos com antecedência mínima de 24h."
+            titulo="Encomenda para eventos"
+            texto="Consulte condições"
             icone="🛍️"
           />
 
             <InfoCard
               titulo="Retirada"
-              texto="Consulte os dias e horários para retirada."
+              texto="Sábado de 12h às 18h | Domingo de 12h às 20h"
               icone="🚚"
           />
 
