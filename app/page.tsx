@@ -43,9 +43,10 @@ export default function Home() {
 {
   nome: "Nutella Premium",
   descricao:
-    "Massa à base de cacau com gotas de chocolate branco e meio amargo, recheada com Nutella e finalizada com Nutella Biscuit.",
-  preco: "R$ 26,00",
-  imagem: "/cookies/nutellapremium.jpeg",
+    "Temporariamente indisponível. Em breve, uma nova versão especial chega ao nosso cardápio.",
+  preco: "",
+  imagem: "/cookies/nutellaoff.jpeg.jpeg",
+  indisponivel: true,
 },
   ];
 
