@@ -41,12 +41,11 @@ export default function Home() {
   imagem: "/cookies/nutella.jpeg",
 },
 {
-  nome: "Nutella Premium",
+  nome: "PopCookies",
   descricao:
-    "Temporariamente indisponível. Em breve, uma nova versão especial chega ao nosso cardápio.",
-  preco: "",
-  imagem: "/cookies/nutellaoff.jpeg.jpeg",
-  indisponivel: true,
+    "Mini cookies para comer como pipoca, acompanhados de um potinho de Nutella para mergulhar.",
+  preco: "20,00",
+  imagem: "/cookies/popcookies.jpeg",
 },
   ];
 
